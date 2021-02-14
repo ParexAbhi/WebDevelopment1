@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+<title>Sign-Up Form</title>
+<script>
+    function pageRedirect() {
+      window.location.href = "file:///D:/Web%20Technology/Web%20Practises/file/Student%20Forms.html";
+    }      
+</script> 
+</head>
+<body>
+<marquee direction="right"><h1>Sign-Up Form</h1></marquee>
+<form>
+<fieldset>
+<legend>Users Personal Info</legend>
+<label for="name">Enter Your Name</label><br>
+<input type="text" id="name"><br>
+<label for="add">Enter Your Address</label><br>
+<textarea cols="100" rows="4" id="add" ></textarea><br>
+<label for="email">Enter Your Email-Id</label><br>
+<input type="email" id="email"><br>
+<label for="uname">Enter Your Username</label><br>
+<input type="text" id="uname"><br>
+<label for="password">Enter Your Password</label><br>
+<input type="password" id="password"><br>
+<label for="age">Enter Your age</label><br>
+<input type="number" min="18" max="1000"><br>
+<label for="telephoneno">Enter Your Telephone Number(xxx-xxx-xxxx)</label><br>
+<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+<br>
+<pre><input type="submit" value="Submit" >    <input type="reset" value="Reset">    <input type="button" value="Back<-" onclick="pageRedirect()">  </pre>
+</fieldset>
+</form>
+</body>
+</html>
